@@ -32,23 +32,30 @@
       </div>
     </header>
     <main>
+      <!--section for the Home page with photo and "explore" button-->
       <section id="home" class="container hero">
         <ul class="hero-list">
           <li class="hero-item">Kateryna Massa</li>
           <li class="hero-item">Your UI/UX Specialist</li>
         </ul>
+        <!--presentation and photo-->
         <div class="hello-container">
-        <h2 class="heading hello">Hi! <br /> I'm a UI/UX designer</h2>
-         <img
-         class="hero-image"
-          src="images/Kateryna_photo.jpg"
-          alt="Kateryna_photo"
-          width="292"
-          height="354"
-        /></div>    
-        <hr class="hero-divider">
-       
+          <h2 class="heading hello">
+            Hi! <br />
+            I'm a UI/UX designer
+          </h2>
+          <img
+            class="hero-image"
+            src="images/Kateryna_photo.jpg"
+            alt="Kateryna_photo"
+            width="292"
+            height="354"
+          />
+        </div>
+        <hr class="hero-divider" />
+
         <button class="hero-button">Explore</button>
+
         <ul class="skills-list">
           <li class="skill-item">UI</li>
           <li class="skill-item">UX</li>
@@ -65,70 +72,151 @@
           <li class="skill-item">adaptive design</li>
         </ul>
       </section>
-      <section id="about" class="container about">
-        <div class="background">
+      <!--section about education, skills and tools. background shoul be 100% page width-->
+      <div class="background">
+        <section id="about" class="container about">
           <h2 class="heading about-heading">About Me</h2>
-          <div class="container about-description">
-          <p class="descr-item">
-            UX/UI Designer with a passion for creating unique and memorable
-            digital experiences. I use Figma as my primary tool for designing
-            interfaces, and thanks to my HTML and CSS skills, I can collaborate
-            effectively with development teams to ensure the technical
-            feasibility of projects. Using a mix of in-depth user research and
-            creativity, I transform ideas into intuitive and engaging digital
-            products.
-          </p>
-          <p class="descr-item">
-            My portfolio, available on Behance and GitHub, reflects my
-            commitment to creating solutions that exceed user expectations and
-            set new standards in the industry. I am looking for a dynamic and
-            innovative team where I can contribute to the creation of excellent
-            digital products.
-          </p></div>
-          
-          <div class="container skills">
-            <div class="skill-item">
-          <h3 class="skill-title">Education</h3>
-          <ul>
-            <li><span>FULLSTACK</span>, online corse GoIT School</li>
-            <li><span>UI/UX DESIGN</span>, online corse GoIT School</li>
-            <li><span>FINANCE</span>, Market Relations University Ukraine</li>
-            <li>
-              <span>GARMENT TECHNOLOGIES AND DESIGN</span>, Kyiv National
-              University of Technologies and Design, Ukraine
+          <div class="about-description">
+            <p class="descr-item">
+              UX/UI Designer with a passion for creating unique and memorable
+              digital experiences. I use Figma as my primary tool for designing
+              interfaces, and thanks to my HTML and CSS skills, I can
+              collaborate effectively with development teams to ensure the
+              technical feasibility of projects. Using a mix of in-depth user
+              research and creativity, I transform ideas into intuitive and
+              engaging digital products.
+            </p>
+            <p class="descr-item">
+              My portfolio, available on Behance and GitHub, reflects my
+              commitment to creating solutions that exceed user expectations and
+              set new standards in the industry. I am looking for a dynamic and
+              innovative team where I can contribute to the creation of
+              excellent digital products.
+            </p>
+          </div>
+
+          <div class="skills">
+            <div class="about-skill-item">
+              <h3 class="skill-title">Education</h3>
+              <ul class="about-skill-list">
+                <li><span>fullstack</span>, online corse GoIT School</li>
+                <li><span>ui/ux design</span>, online corse GoIT School</li>
+                <li>
+                  <span>finance</span>, Market Relations University Ukraine
+                </li>
+                <li>
+                  <span>garment technologies and design</span>, Kyiv National
+                  University of Technologies and Design, Ukraine
+                </li>
+              </ul>
+            </div>
+
+            <div class="about-skill-item">
+              <h3 class="skill-title">languages</h3>
+              <ul class="about-skill-list lang">
+                <li>Ukrainian - native</li>
+                <li>Russian - fluent</li>
+                <li>Italian - fluent</li>
+                <li>English - intermediate</li>
+              </ul>
+            </div>
+            <div class="about-skill-item">
+              <h3 class="skill-title">Tools</h3>
+              <ul class="about-skill-list icons">
+                <li>
+                  <svg class="icon" height="40" width="30">
+                    <use href="./images/icons.svg#icon-figma"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="icon" height="40" width="40">
+                    <use href="./images/icons.svg#icon-git"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="icon" height="40" width="40">
+                    <use href="./images/icons.svg#icon-vscode"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="icon" height="40" width="40">
+                    <use href="./images/icons.svg#icon-html"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="icon" height="40" width="40">
+                    <use href="./images/icons.svg#icon-css"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="icon" height="40" width="40">
+                    <use href="./images/icons.svg#icon-js"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="projects" class="container projects">
+          <h2 class="heading projects-heading">Projects</h2>
+          <ul class="project-list">
+            <li class="project-item">
+              <div class="project-card">
+                <img src="./images/cover_card_1.png" alt="flower_shop_cover" />
+                <div class="card-bottom">
+                  <p class="card-descr">
+                    The landing page to advertise the flower shop's new
+                    opportunity to order a bouquet with delivery
+                  </p>
+                  <img
+                    class="qr-code"
+                    src="./images/qr_card_1.png"
+                    alt="qr-code"
+                    width="72"
+                    height="72"
+                  />
+                </div>
+              </div>
             </li>
-          </ul></div>
-          
-          <div class="skill-item">
-          <h3 class="skill-title">languages</h3>
-          <ul>
-            <li>Ukrainian - native</li>
-            <li>Russian - fluent</li>
-            <li>Italian - fluent</li>
-            <li>English - intermediate</li>
+            <li class="project-item">
+              <div class="project-card">
+                <img src="./images/cover_card_2.png" alt="redesign_cover" />
+                <div class="card-bottom">
+                  <p class="card-descr">
+                    The redesign of the italian roastery’s website with the aim
+                    of increasing its visual appeal and ease of use
+                  </p>
+                  <img
+                    class="qr-code"
+                    src="./images/qr_card_2.png"
+                    alt="qr-code"
+                    width="72"
+                    height="72"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="project-item">
+              <div class="project-card">
+                <img src="./images/cover_card_3.png" alt="app_cover" />
+                <div class="card-bottom">
+                  <p class="card-descr">
+                    An app that allows you to scan products while shopping at
+                    the store
+                  </p>
+                  <img
+                    class="qr-code"
+                    src="./images/qr_card_3.png"
+                    alt="qr-code"
+                    width="72"
+                    height="72"
+                  />
+                </div>
+              </div>
+            </li>
           </ul>
-          </div>
-          <div class="skill-item">
-          <h3 class="skill-title">Tools</h3>
-          <ul>
-            <li>Figma</li>
-            <li>Github</li>
-            <li>VSCode</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-          </div>
-        </div>
-      </section>
-      <div id="projects" class="container">
-        <h2 class="heading">Projects</h2>
-        <ul>
-          <li>Project 1</li>
-          <li>Project 2</li>
-          <li>Project 3</li>
-        </ul></div>
-      </section>
+        </section>
+      </div>
     </main>
     <footer id="footer">
       <ul>

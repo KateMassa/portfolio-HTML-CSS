@@ -5,6 +5,7 @@ body {
   color: #18417e;
   background-color: #fff;
   line-height: 24px;
+  letter-spacing: 0.05em;
   text-decoration: none;
 }
 
@@ -46,10 +47,7 @@ img {
 .container {
   width: 100%;
   max-width: 1128px;
-  padding-left: 16px;
-  padding-right: 16px;
   margin: 0 auto;
-  align-items: center;
 }
 
 .heading {
@@ -78,6 +76,7 @@ img {
   flex-direction: column;
   align-items: flex-start;
   margin-top: 60px;
+  padding-bottom: 48px;
 }
 
 .hero-divider {
@@ -95,6 +94,15 @@ img {
   gap: 20px;
   margin-bottom: 32px;
 }
+
+.hero-item {
+  color: #5c5a8e;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #5c5a8e;
+  padding: 8px 24px;
+}
+
 .hello-container {
   display: flex;
   justify-content: space-between;
@@ -134,7 +142,8 @@ img {
   position: absolute;
   right: 156px; /* Align to the right side of the container */
   top: 50%; /* Place halfway down the hero container */
-  transform: translateY(50%); 
+  transform: translateY(62%);
+}
 
 .skill-item {
   font-size: 16px;
@@ -147,4 +156,45 @@ img {
   border-radius: 20px;
   border: 1px solid #5c5a8e;
   padding: 8px 24px;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  background-color: #f5f4fb;
+}
+
+.about {
+  max-width: 100%;
+  /* display: flex;
+  flex-direction: column; */
+  align-items: flex-start;
+  padding-bottom: 48px;
+}
+
+.about-heading {
+  display: flex;
+  margin-top: 116px;
+  margin-left: 156px;
+}
+
+.about-description {
+  max-width: 1128px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 96px;
+  margin-top: 80px;
+}
+
+.descr-item {
+  width: 480px;
+}
+
+.skills {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
 }

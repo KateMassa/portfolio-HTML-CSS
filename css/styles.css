@@ -72,7 +72,7 @@ img {
   gap: 24px;
 }
 
-.hero {
+#home {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -80,7 +80,7 @@ img {
   padding-bottom: 48px;
 }
 
-.hero-divider {
+.home-divider {
   border: 1px solid #5c5a8e;
   width: 552px;
   margin-left: 0;
@@ -88,7 +88,7 @@ img {
   margin-bottom: 48px;
 }
 
-.hero-list {
+.home-list {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -96,7 +96,7 @@ img {
   margin-bottom: 32px;
 }
 
-.hero-item {
+.home-item {
   color: #5c5a8e;
   background-color: #ffffff;
   border-radius: 20px;
@@ -117,13 +117,13 @@ img {
   text-align: left;
 }
 
-.hero-image {
+.home-image {
   align-self: flex-end;
   max-width: 100%;
   border-radius: 20px;
 }
 
-.hero-button {
+.home-button {
   width: auto;
   padding: 24px 80px;
   font-size: 20px;
@@ -132,7 +132,16 @@ img {
   text-align: center;
   color: #ffffff;
   background-color: #18417e;
+  border: 0;
   border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.home-button:hover,
+.home-button:focus {
+  background-color: #9997ca;
+  box-shadow: inset 0 0 32px 0 #18417e;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .skills-list {
@@ -142,7 +151,7 @@ img {
   gap: 24px;
   position: absolute;
   right: 156px; /* Align to the right side of the container */
-  top: 50%; /* Place halfway down the hero container */
+  top: 50%; /* Place halfway down the home container */
   transform: translateY(62%);
 }
 
@@ -166,10 +175,11 @@ img {
   background-color: #f5f4fb;
 }
 
-.about,
-.projects {
+#about,
+#projects {
   max-width: 100%;
   align-items: flex-start;
+  margin-bottom: 100px;
 }
 
 .about-heading {
@@ -180,8 +190,6 @@ img {
 
 .projects-heading {
   display: flex;
-  margin-top: 48px;
-  /* margin-left: 156px; */
 }
 
 .about-description {
@@ -243,7 +251,7 @@ span {
   justify-content: space-between;
   align-items: top;
   max-width: 1128px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .project-card {
@@ -265,4 +273,24 @@ span {
 
 .qr-code {
   border-radius: 0;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  height: 100px;
+  background-color: #18417e;
+  color: #fff;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.contact-list-item:first-child {
+  padding-right: 120px;
 }
